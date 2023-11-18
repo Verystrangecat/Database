@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace = "com.example.database"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.database"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -35,5 +35,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
